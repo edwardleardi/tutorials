@@ -231,7 +231,7 @@ Learning rate scheduling
 .. code-block:: python
 
     scheduler = optim.X(optimizer,...)      # create lr scheduler
-    scheduler.step()                        # update lr at start of epoch
+    scheduler.step()                        # update lr after optimizer’s update
     optim.lr_scheduler.X                    # where X is LambdaLR, StepLR, MultiStepLR, 
                   # ExponentialLR or ReduceLROnPLateau
 
